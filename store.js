@@ -152,6 +152,7 @@ function restartQuiz() {
 
 
 //Question for Val - I don't think I need all of these functions in here, right?
+//Calls the app functions
 function handleQuizApp() {
   generateQuestion();
   updateScore();
