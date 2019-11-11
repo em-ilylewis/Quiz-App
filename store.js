@@ -146,6 +146,25 @@ function finalScore() {
 
 
 //Function to restart the quiz 
-function reStart() {
+function restartQuiz() {
 
 }
+
+
+//Question for Val - I don't think I need all of these functions in here, right?
+function handleQuizApp() {
+  generateQuestion();
+  updateScore();
+  updateQuestionNumber();
+  resetStats();
+  startQuiz();
+  submitAnswer();
+  createForm();
+  correctAnswer();
+  wrongAnswer();
+  nextQuestion();
+  finalScore();
+  restartQuiz();
+}
+
+$(handleQuizApp);
