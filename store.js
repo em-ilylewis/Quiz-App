@@ -1,6 +1,6 @@
 //Questions and Answers
 
-const QUESTIONS = [
+let QUESTIONS = [
 
     //Question 1
     {
