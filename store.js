@@ -1,6 +1,6 @@
 //Questions and Answers
 
-const STORE = [
+const QUESTIONS = [
 
     //Question 1
     {
