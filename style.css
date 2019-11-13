@@ -1,8 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  
 body {
-    font-family: Georgia; 
-    color: black;
+  font-family: Georgia;
+}
+
+.container {
+
+}
+
+.header {
+  
 }
 
 h1 {
-    font-size: 40px;
+
+}
+
+h3 {
+
+}
+
+.startQuiz {
+ 
+}
+
+.questionNumber .score {
+
+}
+
+.button {
+  
+}
+
+.questionBox {
+
+}
+
+.responseBox {
+
+}
+
+.finalBox {
+
 }
