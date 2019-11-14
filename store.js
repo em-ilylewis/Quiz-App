@@ -1,6 +1,6 @@
 //Questions and Answers
 
-const QUESTIONS = [
+const STORE = [
 
 
   //Question 1
@@ -78,11 +78,22 @@ let score = 0;
 let questionNumber = 0;
 
 
+
+//Function for creating question form
+function createForm(questionIndex) {
+
+}
+
+
+
 //Function to generate the questions
 function generateQuestion() {
 
 }
 
+
+
+//TO DO NEXT
 
 //Function to update the score number
 function updateScore() {
@@ -112,12 +123,6 @@ function startQuiz() {
 
 //Function to submit and check answer 
 function submitAnswer() {
-
-}
-
-
-//Function for creating question form
-function createForm() {
 
 }
 

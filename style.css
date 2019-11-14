@@ -1,25 +1,54 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
 body {
   font-family: Georgia;
 }
 
-.container {
+.cat-row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
 
+.cute-cat {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.happy-cat {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.sad-cat {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.container {
+display: flex; 
+flex-direction: column;
+justify-content: center;
 }
 
 .header {
-  
-}
-
-h1 {
-  
+  text-align: center;   
 }
 
 h3 {
-
+  text-align: center;   
 }
 
 .startQuiz {
@@ -30,14 +59,83 @@ h3 {
 
 }
 
+li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 80px;
+  list-style-type:none;
+  font-size: 20px;
+
+}
+
 .space {
 
 }
 
-
 .button {
-  
+  font-family: Georgia;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: lavender;
 }
+
+.startButton {
+  font-family: Georgia;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: lavender;
+}
+
+.questionButton {
+  font-family: Georgia;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: lavender;
+}
+.nextQuestionButton {
+  font-family: Georgia;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: lavender;
+
+}
+.retakeQuizButton {
+  font-family: Georgia;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: lavender;
+}
+
 
 .startBox {
  
@@ -62,3 +160,4 @@ h3 {
 .finalScore {
 
 }
+
