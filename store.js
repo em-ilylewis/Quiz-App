@@ -72,18 +72,15 @@ const STORE = [
 
 
 
-
 //Variables to store quiz score and question number
 let score = 0;
 let questionNumber = 0;
 
 
-
 //Function for creating question form
-function createForm(questionIndex) {
-
-}
-
+  function createForm() {
+    
+  }
 
 
 //Function to generate the questions
@@ -93,11 +90,14 @@ function generateQuestion() {
 
 
 
-//TO DO NEXT
+/*
+
+TO DO NEXT
+
 
 //Function to update the score number
 function updateScore() {
-
+ 
 }
 
 
@@ -111,7 +111,7 @@ function updateQuestionNumber() {
 //and "score" variables and updates their repective 
 //text in the quiz view
 function resetStats() {
-  
+
 }
 
 
@@ -120,6 +120,7 @@ function startQuiz() {
 
 }
 
+/*
 
 //Function to submit and check answer 
 function submitAnswer() {
@@ -157,20 +158,13 @@ function restartQuiz() {
 }
 
 
-//Calls the app functions
+*/
+
+
+//Calls the functions
 function handleQuizApp() {
-  generateQuestion();
-  updateScore();
-  updateQuestionNumber();
-  resetStats();
-  startQuiz();
-  submitAnswer();
   createForm();
-  correctAnswer();
-  wrongAnswer();
-  nextQuestion();
-  finalScore();
-  restartQuiz();
+  generateQuestion();
 }
 
 $(handleQuizApp);

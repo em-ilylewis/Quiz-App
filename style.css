@@ -9,7 +9,7 @@ body {
 .cat-row {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 20px; 
 }
@@ -26,13 +26,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sad-cat {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   margin-top: 20px;
   margin-bottom: 20px; 
 }
@@ -45,6 +45,11 @@ justify-content: center;
 
 .header {
   text-align: center;   
+  border: 20px; 
+}
+
+h1 {
+  border: 20px; 
 }
 
 h3 {
@@ -76,7 +81,7 @@ li {
   font-family: Georgia;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 15px;
   height: 50px;
   width: 100px;
   cursor: pointer;
@@ -86,11 +91,11 @@ li {
 }
 
 .startButton {
-  font-family: Georgia;
+  font-family: arial;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
-  height: 50px;
+  font-size: 15px;
+  height: 40px;
   width: 100px;
   cursor: pointer;
   border-radius: 4px;
@@ -99,10 +104,10 @@ li {
 }
 
 .questionButton {
-  font-family: Georgia;
+  font-family: arial;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 15px;
   height: 50px;
   width: 100px;
   cursor: pointer;
@@ -111,10 +116,10 @@ li {
   background-color: lavender;
 }
 .nextQuestionButton {
-  font-family: Georgia;
+  font-family: arial;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 15px;
   height: 50px;
   width: 130px;
   cursor: pointer;
@@ -124,10 +129,10 @@ li {
 
 }
 .retakeQuizButton {
-  font-family: Georgia;
+  font-family: arial;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 15px;
   height: 50px;
   width: 120px;
   cursor: pointer;
