@@ -1,4 +1,4 @@
-//Questions and Answers
+//Questions, answer choices, and correct answers
 
 const STORE = [
 
@@ -77,42 +77,57 @@ let score = 0;
 let questionNumber = 0;
 
 
-//Function to generate the questions
+
+//Function to generate the questions and answer choices
 function generateQuestion(index) {
-  $(".questionBox").html(STORE[index].question);
-  $(".answerChoiceBox").html(STORE[index].choices);
-  console.log("test");
+  $('.questionBox').html(STORE[index].question);
+  $('.answerChoiceBox').html(STORE[index].choices);
+  console.log("generateQuestion");
 }
-generateQuestion(0);
+generateQuestion(questionNumber);
+
+
+
+//Function to update to the next question number
+function updateQuestionNumber() {
+  questionNumber++;
+  $('.questionNumber').text(questionNumber + 1);
+  console.log("updateQuestionNumber");
+}
+updateQuestionNumber();
+
+
+
+//Function to set the text value of the question number and score
+function resetStats() {
+  score = 0;
+  questionNumber = 0;
+  $('.score').text(0);
+  $('.questionNumber').text(0);
+  console.log("resetStats");
+}
+resetStats();
+
+
+
+//Function to generate next question 
+function nextQuestion() {
+  console.log("nextQuestion");
+}
+  nextQuestion();
+
+
+
+
 
 
 /*
 
 TO DO NEXT
 
-//Function to update to the next question number
-function updateQuestionNumber() {
-  questionNumber++;
-  $('.questionNumber').text(questionNumber + 1);
-}
-
-updateQuestionNumber();
-
-
 //Function to update the score number
 function updateScore() {
  
-}
-
-
-
-
-
-//Function to set the text value of the "question number" 
-//and "score" variables and updates their repective 
-//text in the quiz view
-function resetStats() {
-
 }
 
 
@@ -121,7 +136,6 @@ function startQuiz() {
 
 }
 
-/*
 
 //Function to submit and check answer 
 function submitAnswer() {
@@ -141,12 +155,6 @@ function wrongAnswer() {
 }
 
 
-//Function to generate next question 
-function nextQuestion() {
-
-}
-
-
 //Function to determine the final score and feedback
 function finalScore() {
 
@@ -157,7 +165,6 @@ function finalScore() {
 function restartQuiz() {
 
 }
-
 
 
 
