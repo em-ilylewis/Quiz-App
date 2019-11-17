@@ -78,25 +78,12 @@ let questionNumber = 0;
 
 
 //Function to generate the questions
-// • get the object from the store at the questionNumber index
-// • use jQuery to select the element with the class questionBox
-// • use the html function on the jQuery element from the previous 
-//  step to fill that element with the question string from the 
-//  object you got out of the store
-
-
-function generateQuestion() {
-  let question = 0; 
-  let choices = 0; 
-    $(".questionBox").html(question);
-    $(".answerChoiceBox").html(choices);
-      console.log("test");
-  }
-generateQuestion();
-
-
-
-
+function generateQuestion(index) {
+  $(".questionBox").html(STORE[index].question);
+  $(".answerChoiceBox").html(STORE[index].choices);
+  console.log("test");
+}
+generateQuestion(0);
 
 
 /*
