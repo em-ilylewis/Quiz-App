@@ -6,6 +6,42 @@ body {
   font-family: Georgia;
 }
 
+.container {
+display: flex; 
+flex-direction: column;
+justify-content: center;
+}
+
+.header {
+  text-align: center;    
+}
+
+.quizForm {
+  display: block; 
+  margin-top: 60px; 
+  padding: 80px; 
+  border-style: solid;
+  border-width: 1px; 
+}
+
+h3 {
+  text-align: center;   
+}
+
+
+li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 80px;
+  list-style-type:none;
+  font-size: 20px;
+}
+
+.quizForm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cat-row {
   margin-left: auto;
   margin-right: auto;
@@ -37,46 +73,6 @@ body {
   margin-bottom: 20px; 
 }
 
-.container {
-display: flex; 
-flex-direction: column;
-justify-content: center;
-}
-
-.header {
-  text-align: center;   
-  border: 20px; 
-}
-
-h1 {
-  border: 20px; 
-}
-
-h3 {
-  text-align: center;   
-}
-
-.startQuiz {
- 
-}
-
-.questionNumber .score {
-
-}
-
-li {
-  display: inline-block;
-  margin-left: 30px;
-  margin-right: 80px;
-  list-style-type:none;
-  font-size: 20px;
-
-}
-
-.space {
-
-}
-
 .button {
   font-family: Georgia;
   margin-left: auto;
@@ -104,17 +100,20 @@ li {
 }
 
 .questionButton {
+  display: block; 
   font-family: arial;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
   height: 50px;
   width: 100px;
+  margin-top: 80px; 
   cursor: pointer;
   border-radius: 4px;
   text-transform: uppercase;
   background-color: lavender;
 }
+
 .nextQuestionButton {
   font-family: arial;
   margin-left: auto;
@@ -139,30 +138,5 @@ li {
   border-radius: 4px;
   text-transform: uppercase;
   background-color: lavender;
-}
-
-
-.startBox {
- 
-}
-
-.questionBox {
-
-}
-
-.answerChoiceBox {
-
-}
-
-.feedbackBox {
-
-}
-
-.finalBox {
-
-}
-
-.finalScore {
-
 }
 

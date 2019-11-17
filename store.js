@@ -77,22 +77,41 @@ let score = 0;
 let questionNumber = 0;
 
 
-//Function for creating question form
-  function createForm() {
-    
-  }
-
 
 //Function to generate the questions
-function generateQuestion() {
+// • get the object from the store at the questionNumber index
+// • use jQuery to select the element with the class questionBox
+// • use the html function on the jQuery element from the previous 
+//  step to fill that element with the question string from the 
+//  object you got out of the store
 
-}
+
+function generateQuestion() {
+      $(STORE).on(questionNumber);
+      $('.quizForm').html;
+      $('.questionBox').html;
+      $('.questionNumber').text(questionNumber);
+      console.log("test");
+  }
+
+generateQuestion();
+
+
+
 
 
 
 /*
 
 TO DO NEXT
+
+//Function to update to the next question number
+function updateQuestionNumber() {
+  questionNumber++;
+  $('.questionNumber').text(questionNumber + 1);
+}
+
+updateQuestionNumber();
 
 
 //Function to update the score number
@@ -101,10 +120,7 @@ function updateScore() {
 }
 
 
-//Function to update to the next question number
-function updateQuestionNumber() {
 
-}
 
 
 //Function to set the text value of the "question number" 
@@ -158,13 +174,14 @@ function restartQuiz() {
 }
 
 
-*/
+
 
 
 //Calls the functions
 function handleQuizApp() {
-  createForm();
-  generateQuestion();
+ 
 }
 
 $(handleQuizApp);
+
+*/
