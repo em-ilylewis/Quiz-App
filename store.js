@@ -6,7 +6,7 @@ const STORE = [
   //Question 1
   {
     question: "While most cats will avoid this thing, Maine Coon cats, known for their gentle and playful personalities, actually tend to love it!",
-    answers: [
+    choices: [
       'Milk',
       'Water',
       'Snow',
@@ -19,7 +19,7 @@ const STORE = [
  //Question 2
  {
   question: "Stewie, an 8-year-old Maine Coon, held the Guinness World Record for world's longest domestic cat. When fully stretched out, Stewie measured how many inches from the tip of his nose to the end of his tail bone?",
-  answers: [
+  choices: [
     '49',
     '31',
     '120',
@@ -32,7 +32,7 @@ const STORE = [
 //Question 3
 {
   question: "The Maine Coon cat, known for its intelligence, gentle demeanor, and 'dog-like' characteristics, are also known for making what kind of noises:",
-  answers: [
+  choices: [
     'Chirping',
     'Barking',
     'Mooing',
@@ -45,7 +45,7 @@ const STORE = [
 //Question 4
 {
   question: "Early in the breed’s development, Maine Coons were often polydactyls, meaning they were born with:",
-  answers: [
+  choices: [
     'Wings',
     'Extra legs',
     'Two tails',
@@ -58,7 +58,7 @@ const STORE = [
 //Question 5
 {
   question: "What was the name of Argus Filch’s Maine Coon cat in the Harry Potter series? ",
-  answers: [
+  choices: [
     'Mrs. Jones',
     'Mrs. Granger',
     'Mrs. Norris',
@@ -77,7 +77,6 @@ let score = 0;
 let questionNumber = 0;
 
 
-
 //Function to generate the questions
 // • get the object from the store at the questionNumber index
 // • use jQuery to select the element with the class questionBox
@@ -87,13 +86,12 @@ let questionNumber = 0;
 
 
 function generateQuestion() {
-      $(STORE).on(questionNumber);
-      $('.quizForm').html;
-      $('.questionBox').html;
-      $('.questionNumber').text(questionNumber);
+  let question = 0; 
+  let choices = 0; 
+    $(".questionBox").html(question);
+    $(".answerChoiceBox").html(choices);
       console.log("test");
   }
-
 generateQuestion();
 
 
