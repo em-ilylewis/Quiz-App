@@ -1,3 +1,6 @@
+'use strict';
+
+
 //Questions, answer choices, and correct answers
 
 const STORE = [
@@ -71,17 +74,18 @@ const STORE = [
 ];
 
 
-
 //Variables to store quiz score and question number
 let score = 0;
 let questionNumber = 0;
 
 
-
-//Function to generate the questions and answer choices
+//Function to generate the questions and answer choices 
 function generateQuestion(index) {
   $('.questionBox').html(STORE[index].question);
   $('.answerChoiceBox').html(STORE[index].choices);
+  //$('.answerChoiceBox').appendTo(STORE[index].choices);?
+  ////append? appendTo? find? forEach?
+  
   console.log("generateQuestion");
 }
 generateQuestion(questionNumber);
@@ -97,7 +101,6 @@ function updateQuestionNumber() {
 updateQuestionNumber();
 
 
-
 //Function to set the text value of the question number and score
 function resetStats() {
   score = 0;
@@ -109,15 +112,11 @@ function resetStats() {
 resetStats();
 
 
-
 //Function to generate next question 
 function nextQuestion() {
   console.log("nextQuestion");
 }
   nextQuestion();
-
-
-
 
 
 
@@ -165,8 +164,6 @@ function finalScore() {
 function restartQuiz() {
 
 }
-
-
 
 
 //Calls the functions
