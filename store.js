@@ -1,6 +1,3 @@
-'use strict';
-
-
 //Questions, answer choices, and correct answers
 
 const STORE = [
@@ -83,19 +80,14 @@ let questionNumber = 0;
 function generateQuestion(index) {
   $('.questionBox').html(STORE[index].question);
   $('.answerChoiceBox').html(STORE[index].choices);
-  //$('.answerChoiceBox').appendTo(STORE[index].choices);?
-  ////append? appendTo? find? forEach?
-  
   console.log("generateQuestion");
 }
-generateQuestion(questionNumber);
-
 
 
 //Function to update to the next question number
 function updateQuestionNumber() {
   questionNumber++;
-  $('.questionNumber').text(questionNumber + 1);
+  $('.questionNumber').text(questionNumber);
   console.log("updateQuestionNumber");
 }
 updateQuestionNumber();
@@ -117,7 +109,6 @@ function nextQuestion() {
   console.log("nextQuestion");
 }
   nextQuestion();
-
 
 
 /*
@@ -166,11 +157,15 @@ function restartQuiz() {
 }
 
 
+
+*/
+
 //Calls the functions
 function handleQuizApp() {
- 
+  generateQuestion(questionNumber);
+  generateQuestion(0);
 }
 
 $(handleQuizApp);
 
-*/
+
